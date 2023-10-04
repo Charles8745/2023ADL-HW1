@@ -47,15 +47,15 @@ for item in valid:
 
 # train轉成json
 json_data = json.dumps(modify_train_list, ensure_ascii=False)
-with open("modify_train.json", "w", encoding="utf-8") as json_file:
+with open("modify_train_Paragraph.json", "w", encoding="utf-8") as json_file:
     json_file.write(json_data)
     
 # valid轉成json
 json_data = json.dumps(modify_valid_list, ensure_ascii=False)
-with open("modify_valid.json", "w", encoding="utf-8") as json_file:
+with open("modify_valid_Paragraph.json", "w", encoding="utf-8") as json_file:
     json_file.write(json_data)
 
 # 讀入看看
-with open('modify_train.json', 'r', encoding="utf-8") as f:
+with open('modify_train_Paragraph.json', 'r', encoding="utf-8") as f:
     modify_train_test = json.load(f)
 print(modify_train_test[42])

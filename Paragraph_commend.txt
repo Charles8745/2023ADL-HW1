@@ -1,0 +1,2 @@
+python run_swag_no_trainer.py --model_name_or_path bert-base-chinese --train_file modify_train_Paragraph.json --validation_file modify_valid_Paragraph.json --max_seq_length 512 --per_device_train_batch_size 1 --gradient_accumulation_steps 2 --learning_rate 3e-5 --num_train_epochs 1 --output_dir /tmp/1004test/
+
