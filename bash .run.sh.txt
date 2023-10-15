@@ -1,0 +1,2 @@
+bash ./run.sh 2023ADLHW1/json/context.json 2023ADLHW1/json/test.json prediction.csv
+

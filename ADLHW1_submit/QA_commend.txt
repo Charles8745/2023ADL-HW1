@@ -1,0 +1,32 @@
+# chinese BERT
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path bert-base-chinese --per_device_train_batch_size 8 --learning_rate 3e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1009_chineseBatch8Epoch3Length512Total_QA/ 
+
+# wwm-ext
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path hfl/chinese-bert-wwm-ext --per_device_train_batch_size 32 --learning_rate 3e-5 --num_train_epochs 5 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1009_wwm-extBatch64Epoch5Length1024_QA/ 
+
+#text2vec-base-chinese kaggle:0.77938
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path shibing624/text2vec-base-chinese --per_device_train_batch_size 8 --learning_rate 3e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1010_text2vecBatch8Epoch3Length512Total_QA/ 
+
+#GanymedeNil/text2vec-large-chinese 3 epoch kaggle:0.79656 (Pagraph use "Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path GanymedeNil/text2vec-large-chinese --per_device_train_batch_size 8 --learning_rate 3e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1010_text2veclargeBatch8Epoch3Length512Total_QA/ 
+ 
+#GanymedeNil/text2vec-large-chinese 5 epoch kaggle:0.79385 (Pagraph use "Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path GanymedeNil/text2vec-large-chinese --per_device_train_batch_size 8 --gradient_accumulation_steps 2 --learning_rate 3e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1013_text2veclargeBatch8Epoch5Length512Total_QA/  
+ 
+#hfl/chinese-lert-large 3 epoch kaggle:0.8001 (Pagraph use "Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path hfl/chinese-lert-large --per_device_train_batch_size 8 --learning_rate 2e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1011_lertlargeBatch8Epoch3Length512Total_QA/ 
+
+#hfl/chinese-lert-large 3 epoch kaggle:0.78571 (Pagraph use "Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path hfl/chinese-lert-large --per_device_train_batch_size 8 --gradient_accumulation_steps 2 --learning_rate 2e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1013_lertlargeBatch16Epoch3Length512Total_QA/ 
+
+#hfl/chinese-lert-large 5 epoch kaggle:0.79837
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path hfl/chinese-lert-large --per_device_train_batch_size 8 --learning_rate 2e-5 --num_train_epochs 5 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1012_lertlargeBatch8Epoch5Length512Total_QA/
+
+#hfl/chinese-macbert-base kaggle:0.77396 (Pagraph use "Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path hfl/chinese-macbert-base --per_device_train_batch_size 8 --learning_rate 3e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1012_macbertbaseBatch8Epoch3Length512Total_QA/ 
+
+#hfl/chinese-macbert-large kaggle:0.78842 (Pagraph use "Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path hfl/chinese-macbert-large --per_device_train_batch_size 8 --learning_rate 3e-5 --num_train_epochs 5 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1012_macbertlargeBatch8Epoch3Length512Total_QA/ 
+
+#shibing624/macbert4csc-base-chinese kaggle:0.76401 (Pagraph use "Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+python run_qa_no_trainer.py --train_file modify_total_QA.json --validation_file modify_valid_QA.json --max_seq_length 512 --model_name_or_path shibing624/macbert4csc-base-chinese --per_device_train_batch_size 8 --learning_rate 3e-5 --num_train_epochs 3 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1013_macbert4cscBatch8Epoch3Length512Total_QA/ 
