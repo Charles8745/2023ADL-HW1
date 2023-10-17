@@ -19,8 +19,8 @@ print("prediction_path:", prediction_path, '\n')
 # Load test datasets and pre-trained model
 with open('./2023ADLHW1/json/modify_test_Paragraph.json', 'r', encoding="utf-8") as f:
     test_dataset = json.load(f)
-Paragraph_tokenizer = AutoTokenizer.from_pretrained("./2023ADLHW1/pretrained_model/Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
-Paragraph_model = AutoModelForMultipleChoice.from_pretrained("./2023ADLHW1/pretrained_model/Titan_1010_text2vecBatch4Epoch1Total_Paragraph")
+Paragraph_tokenizer = AutoTokenizer.from_pretrained("./2023ADLHW1/pretrained_model/Titan_1012_macbertbaseBatch2Epoch1Total_Paragraph")
+Paragraph_model = AutoModelForMultipleChoice.from_pretrained("./2023ADLHW1/pretrained_model/Titan_1012_macbertbaseBatch2Epoch1Total_Paragraph")
 QA_model = pipeline("question-answering", model="./2023ADLHW1/pretrained_model/Titan_1011_lertlargeBatch8Epoch3Length512Total_QA", device=0 if torch.cuda.is_available() else -1)
 
 # Inference
