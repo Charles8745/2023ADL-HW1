@@ -1,0 +1,17 @@
+python run_swag_no_trainer.py --model_name_or_path bert-base-chinese --train_file modify_total_Paragraph.json --validation_file modify_valid_Paragraph.json --max_seq_length 512 --per_device_train_batch_size 4 --learning_rate 3e-5 --num_train_epochs 1 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1009_BertchineseBatch4Epoch1Total_Paragraph/
+
+#text2vec-base-chinese
+python run_swag_no_trainer.py --model_name_or_path shibing624/text2vec-base-chinese --train_file modify_total_Paragraph.json --validation_file modify_valid_Paragraph.json --max_seq_length 512 --per_device_train_batch_size 4 --learning_rate 3e-5 --num_train_epochs 1 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1010_text2vecBatch4Epoch1Total_Paragraph/
+
+
+#GanymedeNil/text2vec-large-chinese
+python run_swag_no_trainer.py --model_name_or_path GanymedeNil/text2vec-large-chinese --train_file modify_total_Paragraph.json --validation_file modify_valid_Paragraph.json --max_seq_length 512 --per_device_train_batch_size 2 --learning_rate 3e-5 --num_train_epochs 1 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1011_text2veclargeBatch2Epoch1Total_Paragraph/
+
+#hfl/chinese-lert-large
+python run_swag_no_trainer.py --model_name_or_path hfl/chinese-lert-large --train_file modify_total_Paragraph.json --validation_file modify_valid_Paragraph.json --max_seq_length 512 --per_device_train_batch_size 2 --learning_rate 3e-5 --num_train_epochs 1 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1011_lertlargeBatch2Epoch1Total_Paragraph/
+
+#hfl/chinese-lert-large
+python run_swag_no_trainer.py --model_name_or_path hfl/chinese-lert-large --train_file modify_total_Paragraph.json --validation_file modify_valid_Paragraph.json --max_seq_length 512 --per_device_train_batch_size 2 --learning_rate 3e-5 --num_train_epochs 1 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1011_lertlargeBatch2Epoch1Total_Paragraph/
+
+#hfl/chinese-macbert-base
+python run_swag_no_trainer.py --model_name_or_path hfl/chinese-macbert-base --train_file modify_total_Paragraph.json --validation_file modify_valid_Paragraph.json --max_seq_length 512 --per_device_train_batch_size 2 --learning_rate 3e-5 --num_train_epochs 1 --output_dir /home/avlab/桌面/ADL-HW1/Titan_1012_macbertbaseBatch2Epoch1Total_Paragraph/
